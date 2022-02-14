@@ -1,16 +1,20 @@
 import React from "react"
 import Layout from "../components/Layout"
 
+import { StaticImage } from "gatsby-plugin-image"
+
+import AquaNeg from "../assets/aqua-negative.svg"
+
 function about(props) {
   return (
     <Layout>
-      {/* <img className="services-header" src={aquaNeg} /> */}
+      <AquaNeg className="services-header" />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         {/* <hr /> */}
-        {/* <div>
-          <img src={mariAndKaruna} />
-        </div> */}
+        <div>
+          <StaticImage src="../assets/bio-pics/one.jpg" />
+        </div>
         <p>
           My whole life, I have known that my path is to support others thrive
           in their journey toward healing and wholeness. My interest in manual

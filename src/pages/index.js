@@ -1,15 +1,17 @@
 import React from "react"
 
 import "../styles/global.css"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
+import FullLogo from "../assets/full-logo.svg"
 
 export default function Home({ data }) {
-  console.log(data)
-  const { title, description } = data.site.siteMetadata
   return (
     <Layout>
+      <div className="banner">
+        <FullLogo />
+      </div>
       <div className="intro">
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Mariposa Wellness I combine a variety
@@ -32,14 +34,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query SiteInfo {
-    site {
-      siteMetadata {
-        description
-        title
-      }
-    }
-  }
-`
