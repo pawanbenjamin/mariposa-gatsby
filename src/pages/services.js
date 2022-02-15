@@ -1,11 +1,15 @@
 import React from "react"
 import Layout from "../components/Layout"
 
+import { StaticImage } from "gatsby-plugin-image"
+
+import AquaNeg from "../assets/aqua-negative.svg"
+
 function services(props) {
   return (
     <Layout>
       <div className="services">
-        {/* <img className="services-header" src={lineAqua} /> */}
+        <AquaNeg />
         <section className="service">
           <h1
             style={{
@@ -17,7 +21,7 @@ function services(props) {
             Services
           </h1>
           <hr />
-          {/* <img src={lookinBaby} /> */}
+          <StaticImage src="../assets/services/looking-at-baby.jpg" />
           <h1>Prenatal Postpartum</h1>
           <p className="fem">
             During pregnancy and in the postpartum phase, changes in hormones,
@@ -51,7 +55,7 @@ function services(props) {
             At Mariposa wellness we are dedicated to inclusive rehabilitation
             for patients across the gender spectrum.
           </p>
-          {/* <img src={gender} /> */}
+          <StaticImage src="../assets/services/gender.jpg" />
           <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>
@@ -83,7 +87,7 @@ function services(props) {
             pelvic alignment, and restore normal functioning in the organs of
             the abdomino-pelvic area.
           </p>
-          {/* <img src={laugh} /> */}
+          <StaticImage src="../assets/services/laugh.jpg" />
           <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>

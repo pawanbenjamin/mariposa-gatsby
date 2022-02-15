@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 
 import AquaNeg from "../assets/aqua-negative.svg"
+// import mK from "../assets/bio-pics/one.jpg"
 
 function about(props) {
   return (
@@ -11,10 +12,8 @@ function about(props) {
       <AquaNeg className="services-header" />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
-        {/* <hr /> */}
-        <div>
-          <StaticImage src="../assets/bio-pics/one.jpg" />
-        </div>
+        <hr />
+        <div>{/* <img src={mK} alt="M n K" /> */}</div>
         <p>
           My whole life, I have known that my path is to support others thrive
           in their journey toward healing and wholeness. My interest in manual
@@ -61,9 +60,9 @@ function about(props) {
           ranging from work ergonomics, pre and postpartum wellness, to sexual
           health throughout the lifespan.
         </p>
-        {/* <div className="didiFam">
-          <img src={didiMariFam} />
-        </div> */}
+        <div className="didiFam">
+          <StaticImage src="../assets/bio-pics/two.jpg" />
+        </div>
         <p className="bio1">
           After 8 years at Body Connect, 3 kids (between my business partner and
           myself), cross country moves, a global pandemic we decided it was time
