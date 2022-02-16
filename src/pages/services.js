@@ -127,7 +127,7 @@ function services(props) {
             restrictions, and will also help to improve flexibility and
             normalize function to the urinary and reproductive systems.
           </p>
-          {/* <img src={seven} /> */}
+          <StaticImage src="../assets/services/seven.jpg" />
           <div className="common-cond">
             <ul>
               <h2>Common Conditions Treated:</h2>
@@ -163,7 +163,7 @@ function services(props) {
             effectively treat persistent pain, release blocked emotional tension
             and improve postural and functionality in the body.
           </p>
-          {/* <img src={eight} /> */}
+          <StaticImage src="../assets/services/eight.jpg" />
           <div className="common-cond">
             <ul>
               <h2>Common Conditions Treated:</h2>

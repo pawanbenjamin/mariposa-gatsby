@@ -13,7 +13,9 @@ function about(props) {
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <hr />
-        <div>{/* <img src={mK} alt="M n K" /> */}</div>
+        <div>
+          <StaticImage src="../assets/bio-pics/one.jpg" />
+        </div>
         <p>
           My whole life, I have known that my path is to support others thrive
           in their journey toward healing and wholeness. My interest in manual
