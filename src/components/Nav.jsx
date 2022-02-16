@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import "../styles/nav.css"
 
 import AquaNeg from "../assets/burger.svg"
+import Union from "../assets/Union.svg"
 
 function Nav(props) {
   useEffect(() => {
@@ -34,13 +35,15 @@ function Nav(props) {
         </Link>
       </div>
       <AquaNeg
-        className="drop-down"
+        className={visible ? "drop-down disap" : "drop-down"}
         onClick={() => setVisible(!visible)}
         // onMouseLeave={() => setVisible(false)}
       ></AquaNeg>
 
       <div className={visible ? "nav-slider" : "nav-slider hide"}>
-        <button onClick={() => setVisible(!visible)}>Close</button>
+        <Union className="ex" onClick={() => setVisible(!visible)}>
+          Close
+        </Union>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/services">Services</Link>

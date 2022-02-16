@@ -69,6 +69,10 @@ a {
     filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(19, 17, 17, 0.2));
     transition: all 1s ease-out;
   }
+
+  .drop-down:hover {
+    filter: brightness(100%);
+  }
 }
 
 .nav-slider {
@@ -80,10 +84,20 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: rgba(206, 174, 214, 0.98);
-  transition: all 2s ease;
+  transition: all 1s ease;
   z-index: 22;
 }
 
 .hide {
   margin-left: -100vw;
+}
+.disap {
+  fill: none;
+  height: 2rem;
+}
+
+.ex {
+  position: relative;
+  right: 0;
+  height: 2rem;
 }
