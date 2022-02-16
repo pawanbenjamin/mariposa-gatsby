@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import "../styles/nav.css"
 
-import AquaNeg from "../assets/txtLogo.svg"
+import AquaNeg from "../assets/burger.svg"
 
 function Nav(props) {
   useEffect(() => {
