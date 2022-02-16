@@ -1,0 +1,62 @@
+.services {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.service hr {
+  border: black;
+
+  background-color: black;
+  overflow: visible;
+  align-items: center;
+  height: 1.5px;
+
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.service h1 {
+  font-size: 2.2rem;
+}
+
+.service img {
+  width: 100%;
+}
+
+.service p {
+  margin-bottom: 2%;
+}
+
+.services-header {
+  filter: drop-shadow(0.2rem 0.2rem 0.2rem rgb(19, 19, 19, 0.4));
+  position: fixed;
+  top: 10rem;
+  right: -20rem;
+  z-index: -30;
+  height: 50rem;
+  opacity: 0.4;
+}
+
+section ul {
+  margin-left: 2rem;
+}
+
+.common-cond {
+  margin-top: 4%;
+  display: grid;
+  place-content: center;
+}

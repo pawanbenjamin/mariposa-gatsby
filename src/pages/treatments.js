@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 
 import { StaticImage } from "gatsby-plugin-image"
 
+import "../styles/treatments.css"
+
 function treatments(props) {
   return (
     <Layout>

@@ -1,12 +1,15 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
+import AquaNeg from "../assets/aqua-negative.svg"
+
+import "../styles/faq.css"
 
 function faq(props) {
   return (
     <Layout>
       <div className="FAQ">
-        {/* <img className="services-header" src={lineAqua} /> */}
+        <AquaNeg className="services-header" />{" "}
         <h1 className="head">Frequently Asked Questions</h1>
         <hr />
         <div className="topic">

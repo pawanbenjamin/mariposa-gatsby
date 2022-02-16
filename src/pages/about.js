@@ -6,10 +6,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import AquaNeg from "../assets/aqua-negative.svg"
 // import mK from "../assets/bio-pics/one.jpg"
 
+import "../styles/about.css"
+
 function about(props) {
   return (
     <Layout>
-      {/* <AquaNeg className="services-header" /> */}
+      <AquaNeg className="services-header" />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <hr />
@@ -74,7 +76,7 @@ function about(props) {
           with my family and friends, being in nature, exploring the world,
           eating delicious food, dancing and listening to live music.
         </p>
-        <screen className="treat-section">
+        <screen className="about-device">
           <h1>Appreciations</h1>
           <p className="text-block">
             I wouldn't be the practitioner I am today without the wonderful

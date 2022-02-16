@@ -4,6 +4,9 @@ import emailjs from "emailjs-com"
 import TextField from "@material-ui/core/TextField"
 import { init } from "emailjs-com"
 import Layout from "../components/Layout"
+import AquaNeg from "../assets/aqua-negative.svg"
+
+import "../styles/book.css"
 
 init(process.env["USER"])
 
@@ -36,7 +39,7 @@ function Book(props) {
   return (
     <Layout>
       <section className="contact">
-        {/* <img className="services-header" src={lineAqua} /> */}
+        <AquaNeg className="services-header" />{" "}
         <div className="existing">
           <h2>
             Returning Patients <br />

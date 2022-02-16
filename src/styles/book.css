@@ -1,0 +1,81 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.form-cont {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 70vmin;
+  gap: 1rem;
+}
+
+.book2 {
+  font-size: 1.6rem;
+  transition: all 0.2s ease-out;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  background: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+}
+
+.book2:hover {
+  scale: 1.02;
+  text-shadow: 2px 2px 2px rgb(97, 95, 95);
+}
+
+@media screen and (max-width: 810px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-cont {
+    width: 76vmin;
+  }
+}
+
+.existing {
+}
+
+.book-app-btn {
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  margin: 2rem;
+  font-family: "Zen Old Mincho", serif;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+  box-shadow: 0 0.1rem 01rem 0.1rem rgba(40, 39, 39, 0.2);
+  border: solid;
+  color: rgb(252, 252, 250);
+
+  background-color: rgba(168, 121, 181, 0.918);
+  background-image: url("../../public/assets/binding-light.png");
+  /* text-shadow: 4px 4px 4px rgb(0, 0, 0); */
+  transition: all 0.5s ease-out;
+}
+
+.book-app-btn:hover {
+  box-shadow: 6px #e7b365;
+  scale: 1.02;
+  color: #f7e4c7;
+  text-shadow: 2px 2px 2px rgb(97, 95, 95);
+}

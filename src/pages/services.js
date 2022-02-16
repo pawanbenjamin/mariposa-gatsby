@@ -5,10 +5,13 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import AquaNeg from "../assets/aqua-negative.svg"
 
+import "../styles/services.css"
+
 function services(props) {
   return (
     <Layout>
       <div className="services">
+        <AquaNeg className="services-header" />
         <section className="service">
           <h1
             style={{
