@@ -9,7 +9,7 @@ import AquaNeg from "../assets/aqua-negative.svg"
 function about(props) {
   return (
     <Layout>
-      <AquaNeg className="services-header" />
+      {/* <AquaNeg className="services-header" /> */}
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <hr />

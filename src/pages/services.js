@@ -9,7 +9,6 @@ function services(props) {
   return (
     <Layout>
       <div className="services">
-        <AquaNeg />
         <section className="service">
           <h1
             style={{

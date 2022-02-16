@@ -13,6 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Zen Old Mincho", serif;
-  background-color: rgba(250, 239, 209, 0.918);
-  /* background-image: url("./assets/binding-light.png"); */
+  background-color: rgba(252, 242, 212, 0.918);
+  background-image: url("../../public/assets/binding-light.png");
 }
