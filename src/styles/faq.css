@@ -62,11 +62,21 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .head {
+    margin: 0 3rem 2rem 3rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .FAQ p {
     font-size: 1rem;
   }
   .FAQ h1 {
     font-size: 1.5rem;
+  }
+
+  .head {
+    margin: 0 3rem 1rem 3rem;
   }
 }

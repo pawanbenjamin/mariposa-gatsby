@@ -12,8 +12,6 @@
 }
 
 .treat-section .img {
-  box-shadow: 0 -0.2rem 0.4rem 0.2rem rgba(40, 39, 39, 0.2);
-
   width: 60%;
 }
 
@@ -29,21 +27,10 @@
   .treatments {
     width: 95vw;
   }
-  .treat-section img {
+  .treat-section > img {
     width: 84%;
   }
   .treat-section p {
     width: 80%;
   }
-}
-
-.menu-show {
-  position: absolute;
-  height: 100vh;
-  background-color: red;
-  z-index: 22;
-}
-
-.menu-hide {
-  display: none;
 }

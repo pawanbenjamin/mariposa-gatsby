@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import { navigate } from "gatsby"
 import emailjs from "emailjs-com"
 import TextField from "@material-ui/core/TextField"
@@ -13,27 +13,33 @@ init(process.env["USER"])
 function Book(props) {
   const form = useRef()
 
+  const [isEmailSent, setIsEmailSent] = useState(false)
+
   const sendEmail = e => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        process.env["SERVICE"],
-        process.env["TEMPLATE"],
-        form.current,
-        process.env["USER"]
-      )
-      .then(
-        result => {
-          console.log(result)
-        },
-        error => {
-          console.log(error)
-        }
-      )
-      .finally(() => {
-        navigate("/")
-      })
+    // emailjs
+    //   .sendForm(
+    //     process.env["SERVICE"],
+    //     process.env["TEMPLATE"],
+    //     form.current,
+    //     process.env["USER"]
+    //   )
+    //   .then(
+    //     result => {
+    //       console.log(result)
+    //     },
+    //     error => {
+    //       console.log(error)
+    //     }
+    //   )
+    //   .finally(() => {
+    //     setIsEmailSent(true)
+    //     setTimeout(navigate("/"), 5000)
+    //   })
+
+    setIsEmailSent(!isEmailSent)
+    setTimeout(() => navigate("/"), 5000)
   }
 
   return (
@@ -53,7 +59,7 @@ function Book(props) {
           <h1>Interested in becoming a New Patient?</h1>
           <h3>
             Please fill out the form below <br />
-            and we will get back to you as soon as possible
+            and we will get back to you as soon as possible!
           </h3>
           <TextField name="name" type="text" placeholder="Name" />
           <TextField name="email" type="text" placeholder="Email" />
@@ -68,6 +74,16 @@ function Book(props) {
             Submit
           </button>
         </form>
+        <div
+          className={
+            isEmailSent ? "message-conf" : "message-conf  hidden-message"
+          }
+        >
+          <p>
+            Thank You for reaching out! <br />
+            We will respond to as soon as we can.
+          </p>
+        </div>
       </section>
     </Layout>
   )

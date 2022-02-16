@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import "../styles/nav.css"
 
-import AquaNeg from "../assets/burger.svg"
+import AquaNeg from "../assets/burger5.svg"
 import Union from "../assets/Union.svg"
 
 function Nav(props) {
@@ -11,6 +11,7 @@ function Nav(props) {
   })
 
   const [visible, setVisible] = useState(false)
+  const [clicked, setClicked] = useState(false)
 
   return (
     <nav className="nav">
@@ -41,15 +42,35 @@ function Nav(props) {
       ></AquaNeg>
 
       <div className={visible ? "nav-slider" : "nav-slider hide"}>
-        <Union className="ex" onClick={() => setVisible(!visible)}>
+        <Union
+          className={clicked ? "ex pressed" : "ex"}
+          onClick={() => {
+            setClicked(!clicked)
+            setVisible(!visible)
+          }}
+        >
           Close
         </Union>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/treatments">Treatments</Link>
-        <Link to="/faq">FAQ</Link>
-        <Link to="/book">Contact</Link>
+        <div className="slide-links">
+          <Link className="linky" to="/">
+            Home
+          </Link>
+          <Link className="linky" to="/about">
+            About
+          </Link>
+          <Link className="linky" to="/services">
+            Services
+          </Link>
+          <Link className="linky" to="/treatments">
+            Treatments
+          </Link>
+          <Link className="linky" to="/faq">
+            FAQ
+          </Link>
+          <Link className="linky" to="/book">
+            Contact
+          </Link>
+        </div>
       </div>
     </nav>
   )

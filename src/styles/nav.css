@@ -34,7 +34,7 @@ a {
 .link {
   color: purple;
   margin: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   transition: all 0.2s ease-out;
 }
 
@@ -64,8 +64,8 @@ a {
 
   .drop-down {
     display: flex;
-    height: 2rem;
-    margin-right: 0.5rem;
+    height: 1.7rem;
+    margin-right: -1rem;
     filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(19, 17, 17, 0.2));
     transition: all 1s ease-out;
   }
@@ -79,13 +79,39 @@ a {
   position: fixed;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(206, 174, 214, 0.98);
-  transition: all 1s ease;
+  background-color: rgba(188, 151, 197, 1);
+  transition: all 0.7s ease-in-out;
   z-index: 22;
+  background-image: url("../../public/assets/binding-light.png");
+}
+
+.nav-slider > Link {
+  margin-right: 0;
+}
+
+.slide-links {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linky {
+  color: rgb(255, 255, 255);
+
+  font-size: 1.6rem;
+}
+
+.linky:active {
+  scale: 1.03;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(87, 214, 236, 0.5);
 }
 
 .hide {
@@ -97,7 +123,12 @@ a {
 }
 
 .ex {
-  position: relative;
-  right: 0;
+  margin-top: 1rem;
+  display: inline-block;
   height: 2rem;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(19, 17, 17, 0.5));
+}
+
+.pressed {
 }

@@ -7,22 +7,22 @@ function Footer(props) {
   return (
     <div className="footer">
       <div className="links">
-        <Link to="/" className="link">
+        <Link to="/" className="link fl">
           Home
         </Link>
-        <Link to="/about" className="link">
+        <Link to="/about" className="link fl">
           About
         </Link>
-        <Link to="/treatments" className="link">
+        <Link to="/treatments" className="link fl">
           Treatments
         </Link>
-        <Link to="/services" className="link">
+        <Link to="/services" className="link fl">
           Services
         </Link>
-        <Link to="/faq" className="link">
+        <Link to="/faq" className="link fl">
           Faq
         </Link>
-        <Link to="/contact" className="link">
+        <Link to="/contact" className="link fl">
           Contact
         </Link>
       </div>

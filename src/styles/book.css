@@ -79,3 +79,31 @@
   color: #f7e4c7;
   text-shadow: 2px 2px 2px rgb(97, 95, 95);
 }
+
+.message-conf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(252, 252, 250);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  position: fixed;
+  z-index: 33;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a879b5;
+  background-image: url("../../public/assets/binding-light.png");
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.message-conf p {
+  width: 80%;
+}
+
+.hidden-message {
+  opacity: 0;
+}

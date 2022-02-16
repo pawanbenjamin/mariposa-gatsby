@@ -3,6 +3,10 @@
   height: 5rem;
 }
 
+.fl {
+  font-size: 0.9rem;
+}
+
 .links {
   display: flex;
   justify-content: center;
