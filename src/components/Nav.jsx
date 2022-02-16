@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 function Nav(props) {
   return (
     <nav>
-      <h1>Mariposa Wellness</h1>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
