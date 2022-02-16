@@ -1,0 +1,94 @@
+a {
+  text-decoration: none;
+}
+
+.nav {
+  position: relative;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 1rem;
+  background-color: transparent;
+}
+
+.book-btn {
+  border-radius: 2rem;
+  font-size: 1.2rem;
+
+  font-family: "Zen Old Mincho", serif;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  /* box-shadow: 0 0.2rem 0.9rem 0.2rem rgba(40, 39, 39, 0.2); */
+  border: 1px solid;
+  color: rgb(252, 252, 250);
+
+  background-color: rgba(206, 174, 214, 0.918);
+  /* background-image: url("../assets/binding-light.png"); */
+  /* text-shadow: 4px 4px 4px rgb(0, 0, 0); */
+  transition: all 0.6s ease-out;
+}
+
+.link {
+  color: purple;
+  margin: 1rem;
+  font-size: 1.25rem;
+  transition: all 0.2s ease-out;
+}
+
+.link:hover {
+  scale: 1.03;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgb(19, 19, 19, 0.2);
+}
+
+.drop-down {
+  display: none;
+}
+
+/* centers links on large screen */
+@media screen and (min-width: 1500px) {
+  .nav {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    justify-content: flex-end;
+  }
+  .links {
+    display: none;
+  }
+
+  .drop-down {
+    display: flex;
+    height: 3rem;
+    margin-right: 0.5rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(19, 17, 17, 0.2));
+    transition: all 1s ease-out;
+  }
+}
+.menu-show {
+  left: 0;
+  height: 200px;
+  background-color: red;
+  z-index: 2;
+}
+
+.nav-slider {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(206, 174, 214, 0.918);
+  transition: all 2s ease;
+}
+
+.hide {
+  margin-left: -100vw;
+}
