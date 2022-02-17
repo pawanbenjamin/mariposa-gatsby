@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import "../styles/nav.css"
 
 import AquaNeg from "../assets/burger5.svg"
 import Union from "../assets/Union.svg"
+// import SEO from "./SEO.jsx"
 
 function Nav(props) {
   useEffect(() => {
@@ -15,6 +18,7 @@ function Nav(props) {
 
   return (
     <nav className="nav">
+      {/* <SEO /> */}
       <div className="links">
         <Link className="link" to="/">
           Home
@@ -48,9 +52,7 @@ function Nav(props) {
             setClicked(!clicked)
             setVisible(!visible)
           }}
-        >
-          Close
-        </Union>
+        ></Union>
         <div className="slide-links">
           <Link className="linky" to="/">
             Home
@@ -61,7 +63,7 @@ function Nav(props) {
           <Link className="linky" to="/services">
             Services
           </Link>
-          <Link className="linky" to="/treatments">
+          <Link className="linky" duration={2} to="/treatments">
             Treatments
           </Link>
           <Link className="linky" to="/faq">

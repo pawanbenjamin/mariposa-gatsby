@@ -10,9 +10,11 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-transition-link`, // Needed for dynamic images
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,6 +34,8 @@ module.exports = {
   ],
   siteMetadata: {
     title: "Marioposa Wellness LLC",
-    description: "DC home for Pelic Floor Physical Therapy",
+    description: "DC, and Maryland home for Pelic Floor Physical Therapy",
+    author: "Marisa Alonso",
+    keywords: `therapy, physical therapy, pelvic floor, wellness, mariposa, health, pelvic health`,
   },
 }

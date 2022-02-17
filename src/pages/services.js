@@ -11,7 +11,7 @@ function services(props) {
   return (
     <Layout>
       <div className="services">
-        <AquaNeg className="services-header" />
+        <AquaNeg loading="eager" className="services-header" />
         <section className="service">
           <h1
             style={{
@@ -23,7 +23,10 @@ function services(props) {
             Services
           </h1>
           <hr />
-          <StaticImage src="../assets/services/looking-at-baby.jpg" />
+          <StaticImage
+            loading="eager"
+            src="../assets/services/looking-at-baby.jpg"
+          />
           <h1>Prenatal Postpartum</h1>
           <p className="fem">
             During pregnancy and in the postpartum phase, changes in hormones,
@@ -57,7 +60,7 @@ function services(props) {
             At Mariposa wellness we are dedicated to inclusive rehabilitation
             for patients across the gender spectrum.
           </p>
-          <StaticImage src="../assets/services/gender.jpg" />
+          <StaticImage loading="eager" src="../assets/services/gender.jpg" />
           <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>
@@ -89,7 +92,7 @@ function services(props) {
             pelvic alignment, and restore normal functioning in the organs of
             the abdomino-pelvic area.
           </p>
-          <StaticImage src="../assets/services/laugh.jpg" />
+          <StaticImage loading="eager" src="../assets/services/laugh.jpg" />
           <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>
@@ -129,7 +132,7 @@ function services(props) {
             restrictions, and will also help to improve flexibility and
             normalize function to the urinary and reproductive systems.
           </p>
-          <StaticImage src="../assets/services/seven.jpg" />
+          <StaticImage loading="eager" src="../assets/services/seven.jpg" />
           <div className="common-cond">
             <ul>
               <h2>Common Conditions Treated:</h2>
@@ -165,7 +168,7 @@ function services(props) {
             effectively treat persistent pain, release blocked emotional tension
             and improve postural and functionality in the body.
           </p>
-          <StaticImage src="../assets/services/eight.jpg" />
+          <StaticImage loading="eager" src="../assets/services/eight.jpg" />
           <div className="common-cond">
             <ul>
               <h2>Common Conditions Treated:</h2>

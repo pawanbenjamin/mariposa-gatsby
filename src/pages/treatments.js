@@ -42,7 +42,11 @@ function treatments(props) {
           <a href="https://www.barralinstitute.com/therapies/index.php">
             Barral Institue Therapy Info
           </a>
-          <StaticImage className="img" src="../assets/treatments/stom2.jpg" />
+          <StaticImage
+            loading="eager"
+            className="img"
+            src="../assets/treatments/stom2.jpg"
+          />
         </section>
         <section className="treat-section">
           <h1>Pelvic Floor Physical Therapy</h1>
@@ -60,7 +64,11 @@ function treatments(props) {
             is one of our core muscles in can often be a missing link in
             persistent back pain, sciatica, and hip pain.
           </p>
-          <StaticImage className="img" src="../assets/treatments/pelv.jpg" />
+          <StaticImage
+            loading="eager"
+            className="img"
+            src="../assets/treatments/pelv.jpg"
+          />
         </section>
         <section className="treat-section">
           <h1> Myofascial Release </h1>
@@ -73,7 +81,11 @@ function treatments(props) {
             manipulation techniques to promote mobility in the fascia to
             decrease pain and improve movement.
           </p>
-          <StaticImage className="img" src="../assets/treatments/four.jpg" />
+          <StaticImage
+            loading="eager"
+            className="img"
+            src="../assets/treatments/four.jpg"
+          />
         </section>
       </div>
     </Layout>

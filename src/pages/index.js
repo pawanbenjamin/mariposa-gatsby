@@ -1,7 +1,7 @@
 import React from "react"
 
 import "../styles/global.css"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/Layout"
 import FullLogo from "../assets/full-logo.svg"
@@ -11,7 +11,7 @@ export default function Home({ data }) {
     <Layout>
       <div className="home">
         <div className="banner">
-          <FullLogo className="ban-logo" />
+          <FullLogo loading="eager" className="ban-logo" />
         </div>
         <div className="intro">
           <p>
@@ -25,9 +25,9 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className="button-container">
-          <Link to="/book">
+          <AniLink fade duration={2} to="/book">
             <button>New Patient?</button>
-          </Link>
+          </AniLink>
           <a href="https://bchwbooking.clientsecure.me/">
             <button className="app-btn">Book Appt</button>
           </a>

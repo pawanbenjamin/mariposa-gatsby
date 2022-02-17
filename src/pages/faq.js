@@ -9,7 +9,7 @@ function faq(props) {
   return (
     <Layout>
       <div className="FAQ">
-        <AquaNeg className="services-header" />{" "}
+        <AquaNeg loading="eager" className="services-header" />{" "}
         <h1 className="head">Frequently Asked Questions</h1>
         <hr />
         <div className="topic">

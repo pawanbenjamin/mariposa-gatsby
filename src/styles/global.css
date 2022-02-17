@@ -114,7 +114,7 @@ img.logo:hover {
 
 @media screen and (max-width: 740px) {
   .intro > p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
   }

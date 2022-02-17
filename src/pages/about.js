@@ -11,12 +11,12 @@ import "../styles/about.css"
 function about(props) {
   return (
     <Layout>
-      <AquaNeg className="services-header" />
+      <AquaNeg loading="eager" className="services-header" />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <hr />
         <div>
-          <StaticImage src="../assets/bio-pics/one.jpg" />
+          <StaticImage loading="eager" src="../assets/bio-pics/one.jpg" />
         </div>
         <p>
           My whole life, I have known that my path is to support others thrive
@@ -65,7 +65,7 @@ function about(props) {
           health throughout the lifespan.
         </p>
         <div className="didiFam">
-          <StaticImage src="../assets/bio-pics/two.jpg" />
+          <StaticImage loading="eager" src="../assets/bio-pics/two.jpg" />
         </div>
         <p className="bio1">
           After 8 years at Body Connect, 3 kids (between my business partner and

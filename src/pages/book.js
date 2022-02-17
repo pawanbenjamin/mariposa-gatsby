@@ -45,7 +45,7 @@ function Book(props) {
   return (
     <Layout>
       <section className="contact">
-        <AquaNeg className="services-header" />{" "}
+        <AquaNeg loading="eager" className="services-header" />{" "}
         <div className="existing">
           <h2>
             Returning Patients <br />
@@ -81,7 +81,7 @@ function Book(props) {
         >
           <p>
             Thank You for reaching out! <br />
-            We will respond to as soon as we can.
+            We will respond as soon as we can.
           </p>
         </div>
       </section>

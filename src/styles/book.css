@@ -95,7 +95,7 @@
   height: 100vh;
   background-color: #a879b5;
   background-image: url("../../public/assets/binding-light.png");
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
   opacity: 1;
   pointer-events: none;
 }
