@@ -16,7 +16,13 @@ function about(props) {
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <hr />
         <div className="didiFam">
-          <StaticImage loading="eager" src="../assets/bio-pics/one.jpg" />
+          <StaticImage
+            loading="eager"
+            src="../assets/bio-pics/one.jpg"
+            style={{
+              maxWidth: "60vw",
+            }}
+          />
         </div>
         <p>
           My whole life, I have known that my path is to support others thrive
@@ -65,7 +71,13 @@ function about(props) {
           health throughout the lifespan.
         </p>
         <div className="didiFam">
-          <StaticImage loading="eager" src="../assets/bio-pics/two.jpg" />
+          <StaticImage
+            loading="eager"
+            src="../assets/bio-pics/two.jpg"
+            style={{
+              maxWidth: "60vw",
+            }}
+          />
         </div>
         <p className="bio1">
           After 8 years at Body Connect, 3 kids (between my business partner and
