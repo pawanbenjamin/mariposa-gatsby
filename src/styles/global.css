@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Zen Old Mincho", serif;
   background-color: rgba(252, 242, 212, 0.918);
-  background-image: url("../../public/assets/binding-light.png");
+  background-image: url("../../static/assets/binding-light.png");
 }
 
 .home {

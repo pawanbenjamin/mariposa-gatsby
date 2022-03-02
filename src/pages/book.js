@@ -8,7 +8,7 @@ import AquaNeg from "../assets/aqua-negative.svg"
 
 import "../styles/book.css"
 
-init(process.env["USER"])
+init(process.env.USER)
 
 function Book(props) {
   const form = useRef()
@@ -20,10 +20,10 @@ function Book(props) {
 
     emailjs
       .sendForm(
-        process.env["SERVICE"],
-        process.env["TEMPLATE"],
+        process.env.SERVICE,
+        process.env.TEMPLATE,
         form.current,
-        process.env["USER"]
+        process.env.USER
       )
       .then(
         result => {
