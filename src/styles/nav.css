@@ -88,7 +88,7 @@ a {
   background-color: rgba(188, 151, 197, 1);
   transition: all 0.7s ease-in-out;
   z-index: 22;
-  background-image: url("../../public/assets/binding-light.png");
+  background-image: url("../../static/assets/binding-light.png");
 }
 
 .nav-slider > Link {
