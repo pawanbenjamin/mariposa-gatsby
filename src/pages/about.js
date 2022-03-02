@@ -15,7 +15,7 @@ function about(props) {
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <hr />
-        <div>
+        <div className="didiFam">
           <StaticImage loading="eager" src="../assets/bio-pics/one.jpg" />
         </div>
         <p>
