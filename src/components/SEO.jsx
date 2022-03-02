@@ -17,8 +17,6 @@ const SEO = ({ title, description }) => {
     }
   `)
 
-  console.log(data)
-
   return (
     <Helmet
       htmlAttributes={{ lang: `en` }}
