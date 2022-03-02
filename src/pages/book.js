@@ -18,25 +18,25 @@ function Book(props) {
   const sendEmail = e => {
     e.preventDefault()
 
-    // emailjs
-    //   .sendForm(
-    //     process.env["SERVICE"],
-    //     process.env["TEMPLATE"],
-    //     form.current,
-    //     process.env["USER"]
-    //   )
-    //   .then(
-    //     result => {
-    //       console.log(result)
-    //     },
-    //     error => {
-    //       console.log(error)
-    //     }
-    //   )
-    //   .finally(() => {
-    //     setIsEmailSent(true)
-    //     setTimeout(navigate("/"), 5000)
-    //   })
+    emailjs
+      .sendForm(
+        process.env["SERVICE"],
+        process.env["TEMPLATE"],
+        form.current,
+        process.env["USER"]
+      )
+      .then(
+        result => {
+          console.log(result)
+        },
+        error => {
+          console.log(error)
+        }
+      )
+      .finally(() => {
+        setIsEmailSent(true)
+        setTimeout(navigate("/"), 5000)
+      })
 
     setIsEmailSent(!isEmailSent)
     setTimeout(() => navigate("/"), 5000)
