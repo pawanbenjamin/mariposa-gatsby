@@ -68,7 +68,7 @@
   color: rgb(252, 252, 250);
 
   background-color: rgba(168, 121, 181, 0.918);
-  background-image: url("../../public/assets/binding-light.png");
+  background-image: url("../../static/assets/binding-light.png");
   /* text-shadow: 4px 4px 4px rgb(0, 0, 0); */
   transition: all 0.5s ease-out;
 }
@@ -94,7 +94,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #a879b5;
-  background-image: url("../../public/assets/binding-light.png");
+  background-image: url("../../static/assets/binding-light.png");
   transition: all 2s ease-in-out;
   opacity: 1;
   pointer-events: none;

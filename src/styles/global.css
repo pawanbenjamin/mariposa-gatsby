@@ -56,7 +56,7 @@ img.logo:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../public/assets/hands-on-tummy.jpg");
+  background-image: url("../../static/assets/hands-on-tummy.jpg");
 }
 
 .intro > p {
@@ -100,7 +100,7 @@ img.logo:hover {
   color: rgb(252, 252, 250);
 
   background-color: rgba(168, 121, 181, 0.918);
-  background-image: url("../../public/assets/binding-light.png");
+  background-image: url("../../static/assets/hands-on-tummy.jpg");
 
   transition: all 0.5s ease-out;
 }
