@@ -11,7 +11,13 @@ export default function Home({ data }) {
     <Layout>
       <div className="home">
         <div className="banner">
-          <FullLogo loading="eager" className="ban-logo" />
+          <StaticImage
+            loading="eager"
+            src="../assets/bio-pics/full-logo.svg"
+            // style={{
+            //   maxWidth: "60vw",
+            // }}
+          />
         </div>
         <div className="intro">
           <p>
