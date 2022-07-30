@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react"
+import { Link } from "gatsby"
 import { navigate } from "gatsby"
 import emailjs from "emailjs-com"
 import TextField from "@material-ui/core/TextField"
 import { init } from "emailjs-com"
 import Layout from "../components/Layout"
 import AquaNeg from "../assets/aqua-negative.svg"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import "../styles/book.css"
 
@@ -20,26 +22,26 @@ function Book(props) {
 
     emailjs
       .sendForm(
-        process.env.SERVICE,
-        process.env.TEMPLATE,
+        "service_5tu8c79",
+        "template_m9bfemh",
         form.current,
-        process.env.USER
+        "VWr3-lbSwERsZJAzw"
       )
       .then(
         result => {
-          console.log(result)
+          console.log(result.text)
         },
         error => {
-          console.log(error)
+          console.log(error.text)
         }
       )
       .finally(() => {
         setIsEmailSent(true)
-        setTimeout(navigate("/"), 5000)
+        form.current.reset()
       })
-
-    setIsEmailSent(!isEmailSent)
-    setTimeout(() => navigate("/"), 5000)
+    setTimeout(() => {
+      setIsEmailSent(false)
+    }, 5000)
   }
 
   return (
@@ -83,6 +85,16 @@ function Book(props) {
             Thank You for reaching out! <br />
             We will respond as soon as we can.
           </p>
+          {/* <AniLink fade duration={1} className="button-container" to="/">
+            <button
+              onClick={() => {
+                console.log("hi")
+              }}
+              style={{ marginTop: "-30px" }}
+            >
+              Home
+            </button>
+          </AniLink> */}
         </div>
       </section>
     </Layout>

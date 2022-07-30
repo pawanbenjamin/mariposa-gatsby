@@ -85,10 +85,11 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  flex-direction: column;
   color: rgb(252, 252, 250);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   position: fixed;
-  z-index: 33;
+
   left: 0;
   top: 0;
   width: 100vw;

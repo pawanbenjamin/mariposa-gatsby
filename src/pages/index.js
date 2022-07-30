@@ -3,6 +3,7 @@ import React from "react"
 import "../styles/global.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import FullLogo from "../assets/full-logo.svg"
 
@@ -11,12 +12,11 @@ export default function Home({ data }) {
     <Layout>
       <div className="home">
         <div className="banner">
-          <StaticImage
-            loading="eager"
+          <FullLogo
             src="../assets/bio-pics/full-logo.svg"
-            // style={{
-            //   maxWidth: "60vw",
-            // }}
+            style={{
+              maxWidth: "40vw",
+            }}
           />
         </div>
         <div className="intro">
