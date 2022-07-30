@@ -81,16 +81,6 @@ function Book(props) {
             Thank You for reaching out! <br />
             We will respond as soon as we can.
           </p>
-          {/* <AniLink fade duration={1} className="button-container" to="/">
-            <button
-              onClick={() => {
-                console.log("hi")
-              }}
-              style={{ marginTop: "-30px" }}
-            >
-              Home
-            </button>
-          </AniLink> */}
         </div>
       </section>
     </Layout>
