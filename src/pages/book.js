@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 
-import emailjs from "emailjs-com"
+import emailjs from "@emailjs/browser"
 import TextField from "@material-ui/core/TextField"
 
 import Layout from "../components/Layout"
