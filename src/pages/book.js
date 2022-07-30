@@ -18,10 +18,10 @@ function Book(props) {
 
     emailjs
       .sendForm(
-        process.env.SERVICE,
-        process.env.TEMPLATE,
+        process.env.GATSBY_SERVICE,
+        process.env.GATSBY_TEMPLATE,
         form.current,
-        process.env.PUBLIC_KEY
+        process.env.GATSBY_PUBLIC_KEY
       )
       .then(
         result => {
