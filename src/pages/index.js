@@ -1,9 +1,8 @@
 import React from "react"
 
 import "../styles/global.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import FullLogo from "../assets/full-logo.svg"
 
@@ -31,9 +30,9 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className="button-container">
-          <AniLink fade duration={2} to="/book">
+          <Link to="/book">
             <button>New Patient?</button>
-          </AniLink>
+          </Link>
           <a href="https://bchwbooking.clientsecure.me/">
             <button className="app-btn">Book Appt</button>
           </a>

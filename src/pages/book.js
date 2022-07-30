@@ -1,16 +1,12 @@
 import React, { useRef, useState } from "react"
-import { Link } from "gatsby"
-import { navigate } from "gatsby"
+
 import emailjs from "emailjs-com"
 import TextField from "@material-ui/core/TextField"
-import { init } from "emailjs-com"
+
 import Layout from "../components/Layout"
 import AquaNeg from "../assets/aqua-negative.svg"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import "../styles/book.css"
-
-init(process.env.USER)
 
 function Book(props) {
   const form = useRef()
