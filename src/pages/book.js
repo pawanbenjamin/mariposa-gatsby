@@ -18,10 +18,10 @@ function Book(props) {
 
     emailjs
       .sendForm(
-        "service_5tu8c79",
-        "template_m9bfemh",
+        process.env.SERVICE,
+        process.env.TEMPLATE,
         form.current,
-        "VWr3-lbSwERsZJAzw"
+        process.env.PUBLIC_KEY
       )
       .then(
         result => {
@@ -81,6 +81,16 @@ function Book(props) {
             Thank You for reaching out! <br />
             We will respond as soon as we can.
           </p>
+          {/* <AniLink fade duration={1} className="button-container" to="/">
+            <button
+              onClick={() => {
+                console.log("hi")
+              }}
+              style={{ marginTop: "-30px" }}
+            >
+              Home
+            </button>
+          </AniLink> */}
         </div>
       </section>
     </Layout>
