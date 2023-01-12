@@ -29,10 +29,10 @@ function faq(props) {
           <h1>Fees</h1>
           <ul className="fact-list">
             <li>
-              <h4>Initial Evaluation: $230</h4>
+              <h4>90 Min Evaluation: $405</h4>
             </li>
             <li>
-              <h4>60 min follow-up appointment: $195</h4>
+              <h4>55 minute treatment: $220</h4>
             </li>
           </ul>
           <h4> Accessibility Rates </h4>
